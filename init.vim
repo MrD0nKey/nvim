@@ -50,6 +50,8 @@ set relativenumber
 set termguicolors
 colorscheme nightfly
 set completeopt=menu,menuone,noselect
+set splitright
+set splitbelow
 
 lua << EOF
 require'globals'
