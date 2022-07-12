@@ -50,6 +50,7 @@ set relativenumber
 set termguicolors
 colorscheme nightfly
 set completeopt=menu,menuone,noselect
+"Options for spliting
 set splitright
 set splitbelow
 
