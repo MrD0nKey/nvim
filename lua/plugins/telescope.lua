@@ -20,6 +20,12 @@ require('telescope').setup{
   }
 }
 
+--Extensions
+require'telescope'.load_extension('fzf')
+require'telescope'.load_extension('project')
+
 --Keymaps
 map('n','ff','<cmd>lua require("telescope.builtin").find_files()<cr>',opts)
 map('n','fb','<cmd>lua require("telescope.builtin").buffers()<cr>',opts)
+map('n','fp','<cmd>lua require("telescope").extensions.project.project()<cr>',opts)
+
