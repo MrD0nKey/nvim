@@ -74,5 +74,3 @@ require'plugins/telescope'
 require'plugins/todo'
 require'plugins/tabbar'
 EOF
-
-"Testing mac ssh
