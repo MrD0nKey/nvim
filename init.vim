@@ -39,8 +39,13 @@ Plug 'nvim-telescope/telescope-project.nvim'
 "Colorizer
 Plug 'norcalli/nvim-colorizer.lua'
 
+"TODO highlights
 Plug 'folke/todo-comments.nvim'
+"Tabbar to make it more beautifull
 Plug 'romgrk/barbar.nvim'
+
+"Vim-fugitive, git commands inside vim
+Plug'https://github.com/tpope/vim-fugitive'
 call plug#end()
 
 "colorscheme vim-monokai-tasty
