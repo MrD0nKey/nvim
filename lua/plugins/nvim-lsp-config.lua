@@ -8,7 +8,7 @@ local map = vim.api.nvim_set_keymap
 local bufopts = { noremap=true, silent=true }
 map('n', '<space>e', '<cmd>vim.diagnostic.open_float<CR>', bufopts)
 map('n', '[d', '<cmd>vim.diagnostic.goto_prev<CR>', bufopts)
-map('n', ']d', '<cmd>vim.diaenostic.goto_next<CR>', bufopts)
+map('n', ']d', '<cmd>vim.diagnostic.goto_next<CR>', bufopts)
 map('n', '<space>q', '<cmd>vim.diagnostic.setloclist<CR>', bufopts)
 
 -- Use an on_attach function to only map the following keys
@@ -45,3 +45,4 @@ for _, lsp in pairs(servers) do
     on_attach = on_attach,
   }
 end
+

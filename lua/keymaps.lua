@@ -11,3 +11,10 @@ map('n','<leader>ss','<cmd>so %<CR>',opts)
 map('n','t','<cmd>BufferNext<CR>',opts)
 map('n','T','<cmd>BufferPrevious<CR>',opts)
 
+map('i','(','()<left>',opts)
+map('i','{','{}<left>',opts)
+map('i','[','[]<left>',opts)
+map('i','"','""<left>',opts)
+map('i',"'","''<left>",opts)
+map('i','{<Cr>','{<CR>}<esc>O',opts)
+
