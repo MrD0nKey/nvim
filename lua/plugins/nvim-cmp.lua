@@ -71,7 +71,7 @@ return {
                 ['<C-Space>'] = cmp.mapping.complete(),
                 ['<C-e>'] = cmp.mapping.abort(),
                 ['<CR>'] = cmp.mapping.confirm {
-                    behavior = cmp.ConfirmBehavior.Replace,
+                    behavior = cmp.ConfirmBehavior.select,
                     select = true,
                 },
                 --['<C-n>'] = cmp.mapping(function(fallback)
@@ -93,7 +93,7 @@ return {
                 --    end
                 --end, { 'i', 's' }),
             },
-            sources = {
+            sources = cmp.config.sources {
                 { name = 'nvim_lsp' },
                 { name = 'nvim_lua' }, -- For luasnip users.
                 { name = 'luasnip' },{

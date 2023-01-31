@@ -37,7 +37,7 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-        
+
 local map = vim.api.nvim_set_keymap
 local opts = {silent = true, noremap = true}
 
@@ -47,7 +47,7 @@ map('n', '<leader>T','<cmd>bprevious<Cr>',opts)
 map('i', '{<Cr>', '{<Cr>}<Esc>O',opts)
 map('n', '<C-u>', '<C-u>zz',opts)
 map('n', '<C-d>', '<C-d>zz',opts)
-
+map('t', '<C-l>', [[<C-\><C-n>:b#<Cr>]], {silent = true, noremap = true})
 --Diagnostics
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
