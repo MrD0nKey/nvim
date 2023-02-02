@@ -8,7 +8,7 @@ return {
         -- [[ Configure Telescope ]]
         -- See `:help telescope` and `:help telescope.setup()`
         --
-        local actions = require'telescope.actions'
+        local actions = require 'telescope.actions'
         require('telescope').setup {
             defaults = {
                 mappings = {
@@ -24,6 +24,7 @@ return {
 
         -- Enable telescope fzf native, if installed
         pcall(require('telescope').load_extension, 'fzf')
+        pcall(require('telescope').load_extension, 'harpoon')
 
         -- See `:help telescope.builtin`
         vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles,

@@ -11,6 +11,13 @@ return {
                 component_separators = '|',
                 section_separators = { left = '', right = '' },
             },
+            sections = {
+                lualine_c = {{
+                    'filename',
+                    file_status = true,
+                    path = 2
+                }},
+            }
         }
     end,
 }
