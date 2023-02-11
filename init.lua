@@ -51,7 +51,8 @@ map('n', '<leader>T', '<cmd>bprevious<Cr>', opts)
 map('i', '{<Cr>', '{<Cr>}<Esc>O', opts)
 map('n', '<C-u>', '<C-u>zz', opts)
 map('n', '<C-d>', '<C-d>zz', opts)
-map('t', '<C-l>', [[<C-\><C-n>:b#<Cr>]], opts)
+map('n', '<leader>tt' , '<cmd>ToggleTerm size=30 direction=float<Cr>' , opts)
+map('t', '<C-l>', '<cmd>ToggleTerm<Cr>', opts)
 
 --Diagnostics
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)

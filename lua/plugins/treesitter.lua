@@ -10,7 +10,7 @@ return {
             autotag = {
                 enable = true,
             },
-            ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'typescript', 'help', 'vim' },
+            ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'typescript', 'help', 'vim','bash','c_sharp','comment','dockerfile','gitignore','graphql','haskell','http','json','json5','julia','latex','make','markdown','regex','scss','swift','toml','tsx','vue'},
 
             highlight = { enable = true },
             indent = { enable = true, disable = { 'python' } },
