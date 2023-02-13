@@ -96,8 +96,8 @@ return {
             sources = cmp.config.sources {
                 { name = 'nvim_lsp' },
                 { name = 'nvim_lua' }, -- For luasnip users.
-                { name = 'luasnip' },{
-                { name = 'buffer', option = {keyword_length = 3, max_item_count = 5 },}},
+                { name = 'luasnip' },
+                { name = 'buffer'},
             },
         }
 

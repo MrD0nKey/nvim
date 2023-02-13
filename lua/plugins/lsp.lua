@@ -66,8 +66,20 @@ return {
             -- clangd = {},
             -- gopls = {},
             pyright = {},
-            -- rust_analyzer = {},
-            -- tsserver = {},
+            rust_analyzer = {},
+            tsserver = {},
+            jdtls = {
+                settings = {
+                    java = {
+                        completion = {
+                            overwrite = true
+                        },
+                        confirmation = {
+                            default_behavior = require('cmp').ConfirmBehavior.Replace,
+                        }
+                    }
+                },
+            },
 
             sumneko_lua = {
                 Lua = {
