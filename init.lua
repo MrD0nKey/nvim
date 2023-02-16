@@ -52,6 +52,7 @@ map('i', '{<Cr>', '{<Cr>}<Esc>O', opts)
 map('n', '<C-u>', '<C-u>zz', opts)
 map('n', '<C-d>', '<C-d>zz', opts)
 map('n', '<leader>tt' , '<cmd>ToggleTerm size=30 direction=float<Cr>' , opts)
+map('n', '<leader>lg' , '<cmd>ToggleTerm direction=vertical<Cr>' , opts)
 map('t', '<C-l>', '<cmd>ToggleTerm<Cr>', opts)
 
 --Diagnostics
