@@ -24,5 +24,6 @@
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "580b6c48651cabb63455e97d7e131ed557b8c7e2" },
   "telescope.nvim": { "branch": "0.1.x", "commit": "a1bd6866b539afdaa25305626c7aa6049b805d67" },
   "toggleterm.nvim": { "branch": "main", "commit": "2a787c426ef00cb3488c11b14f5dcf892bbd0bda" },
+  "train.nvim": { "branch": "master", "commit": "7b2e9a59af58385d88bf39c5311c08f839e2b1ce" },
   "vim-nightfly-guicolors": { "branch": "master", "commit": "fae00cd12332d690ea6e07d0d347ac1b36cfc590" }
 }

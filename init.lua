@@ -11,6 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+
 local o = vim.opt
 local g = vim.g
 
@@ -41,6 +42,7 @@ o.expandtab = true
 vim.wo.signcolumn = 'yes'
 vim.wo.number = true
 
+
 local map = vim.api.nvim_set_keymap
 local opts = { silent = true, noremap = true }
 
@@ -52,8 +54,9 @@ map('i', '{<Cr>', '{<Cr>}<Esc>O', opts)
 map('n', '<C-u>', '<C-u>zz', opts)
 map('n', '<C-d>', '<C-d>zz', opts)
 map('n', '<leader>tt' , '<cmd>ToggleTerm size=30 direction=float<Cr>' , opts)
-map('n', '<leader>lg' , '<cmd>ToggleTerm direction=vertical<Cr>' , opts)
+map('n', '<leader>tg' , '<cmd>TermExec size=70 direction=float cmd="lazygit"<Cr>' , opts)
 map('t', '<C-l>', '<cmd>ToggleTerm<Cr>', opts)
+map('n', '<C-t>', '<cmd>ToggleTerm<Cr>', opts)
 
 --Diagnostics
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
@@ -63,5 +66,3 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
 
 require"lazy".setup("plugins")
 require"autocmds.init"
-
-map('n','<leader>Sd','<cmd>SearchAndReplaceDoc<Cr>',opts)
