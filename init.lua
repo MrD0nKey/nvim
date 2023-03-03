@@ -16,35 +16,45 @@ local o = vim.opt
 local g = vim.g
 
 g.mapleader = ","
+
 g.t_co = 256
+o.termguicolors = true
+o.background = 'dark'
+o.colorcolumn = '120'
+
 o.hlsearch = false
+o.incsearch = true
+
 o.relativenumber = true
 o.breakindent = true
 o.undofile = true
+
 o.ignorecase = true
-o.termguicolors = true
 o.smartcase = true
-o.incsearch = true
+
 o.updatetime = 250
 o.completeopt = 'menu,menuone,noselect'
+
 o.splitright = true
 o.splitbelow = true
+
 o.mouse = 'a'
-o.background = 'dark'
-o.colorcolumn = '120'
-o.smartindent = true
-o.scrolloff = 4
+
 o.encoding = 'utf8'
+o.smartindent = true
+o.scrolloff = 8
 o.tabstop = 4
 o.softtabstop = 4
 o.shiftwidth = 4
 o.expandtab = true
-vim.wo.signcolumn = 'yes'
-vim.wo.number = true
 
+vim.wo.signcolumn = 'yes'
+
+vim.wo.number = true
 
 local map = vim.api.nvim_set_keymap
 local opts = { silent = true, noremap = true }
+
 
 --General Keymaps
 map('i', 'jk', '<Esc><Right>', opts)
@@ -53,16 +63,25 @@ map('n', '<leader>T', '<cmd>bprevious<Cr>', opts)
 map('i', '{<Cr>', '{<Cr>}<Esc>O', opts)
 map('n', '<C-u>', '<C-u>zz', opts)
 map('n', '<C-d>', '<C-d>zz', opts)
-map('n', '<leader>tt' , '<cmd>ToggleTerm size=30 direction=float<Cr>' , opts)
-map('n', '<leader>tg' , '<cmd>TermExec size=70 direction=float cmd="lazygit"<Cr>' , opts)
+map('n', '<leader>tt', '<cmd>ToggleTerm size=30 direction=float<Cr>', opts)
+map('n', '<leader>tg', '<cmd>TermExec size=70 direction=float cmd="lazygit"<Cr>', opts)
 map('t', '<C-l>', '<cmd>ToggleTerm<Cr>', opts)
 map('n', '<C-t>', '<cmd>ToggleTerm<Cr>', opts)
+
+map('v','<','<gv',opts)
+map('v','>','>gv',opts)
+
+map('n','n','nzzzv',opts)
+map('n','N','Nzzzv',opts)
+
+map('x','<leader>p',"\"_dP",opts)
 
 --Diagnostics
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, opts)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 
-require"lazy".setup("plugins")
-require"autocmds.init"
+-- Setup of Plugins
+require "lazy".setup("plugins")
+require "autocmds.init"

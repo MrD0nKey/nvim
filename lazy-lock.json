@@ -14,6 +14,7 @@
   "lualine.nvim": { "branch": "master", "commit": "e99d733e0213ceb8f548ae6551b04ae32e590c80" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "93e58e100f37ef4fb0f897deeed20599dae9d128" },
   "mason.nvim": { "branch": "main", "commit": "01dfdfd36be77cb1195b60d580315bf4e2d8e62c" },
+  "move.nvim": { "branch": "main", "commit": "4f72d2d86f4392cec1aa4e0a8c20314022a806ad" },
   "neodev.nvim": { "branch": "main", "commit": "3c6e485bb3ff819c33e8f24847ba7d421d658569" },
   "nvim-cmp": { "branch": "main", "commit": "7a3b1e76f74934b12fda82158237c6ad8bfd3d40" },
   "nvim-highlight-colors": { "branch": "main", "commit": "af051bfe2971fc888d21cdfc59f5444904353b43" },
@@ -27,5 +28,6 @@
   "todo-comments.nvim": { "branch": "main", "commit": "74c7d28cb50b0713c881ef69bcb6cdd77d8907d1" },
   "toggleterm.nvim": { "branch": "main", "commit": "a5638b2206c3930a16a24e5c184dddd572f8cd34" },
   "train.nvim": { "branch": "master", "commit": "7b2e9a59af58385d88bf39c5311c08f839e2b1ce" },
-  "vim-nightfly-guicolors": { "branch": "master", "commit": "5ee57772c9875295a18ff755d67d8713f6edff15" }
+  "vim-nightfly-guicolors": { "branch": "master", "commit": "5ee57772c9875295a18ff755d67d8713f6edff15" },
+  "vim-test": { "branch": "master", "commit": "c63b94c1e5089807f4532e05f087351ddb5a207c" }
 }
