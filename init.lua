@@ -58,8 +58,8 @@ local opts = { silent = true, noremap = true }
 
 --General Keymaps
 map('i', 'jk', '<Esc><Right>', opts)
-map('n', '<leader>t', '<cmd>bnext<Cr>', opts)
-map('n', '<leader>T', '<cmd>bprevious<Cr>', opts)
+map('n', '<leader>bn', '<cmd>bnext<Cr>', opts)
+map('n', '<leader>bp', '<cmd>bprevious<Cr>', opts)
 map('i', '{<Cr>', '{<Cr>}<Esc>O', opts)
 map('n', '<C-u>', '<C-u>zz', opts)
 map('n', '<C-d>', '<C-d>zz', opts)
@@ -68,19 +68,23 @@ map('n', '<leader>tg', '<cmd>TermExec size=70 direction=float cmd="lazygit"<Cr>'
 map('t', '<C-l>', '<cmd>ToggleTerm<Cr>', opts)
 map('n', '<C-t>', '<cmd>ToggleTerm<Cr>', opts)
 
+--Indentation
 map('v','<','<gv',opts)
 map('v','>','>gv',opts)
 
-map('n','n','nzzzv',opts)
-map('n','N','Nzzzv',opts)
+--Window Navigation
+map('n','<C-h>','<C-w>h',opts)
+map('n','<C-l>','<C-w>l',opts)
+map('n','<C-k>','<C-w>k',opts)
+map('n','<C-j>','<C-w>j',opts)
 
+--Prime keymap dont remember
 map('x','<leader>p',"\"_dP",opts)
 
 --Diagnostics
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 
 -- Setup of Plugins
 require "lazy".setup("plugins")

@@ -15,7 +15,11 @@ vim.api.nvim_create_user_command("SearchAndReplaceDoc", function ()
     vim.cmd(":%s/" .. wordToReplace .. "/" .. newWord .. "/g" .. confirmationString)
 end, {})
 
+vim.api.nvim_create_user_command("Keymaps", function ()
+    vim.cmd(":Telescope keymaps")
+end, {})
+
 local map = vim.api.nvim_set_keymap
 local opts = { silent = true, noremap = true }
 
-map('n','<leader>Sd','<cmd>SearchAndReplaceDoc<Cr>',opts)
+map('n','<leader>sr','<cmd>SearchAndReplaceDoc<Cr>',opts)
