@@ -78,6 +78,12 @@ map('n','<C-l>','<C-w>l',opts)
 map('n','<C-k>','<C-w>k',opts)
 map('n','<C-j>','<C-w>j',opts)
 
+--Rezising Windows
+map('n','<S-Left>','<C-w>2>',opts)
+map('n','<S-Right>','<C-w>2<',opts)
+map('n','<S-Up>','<C-w>2+',opts)
+map('n','<S-Down>','<C-w>2-',opts)
+
 --Prime keymap dont remember
 map('x','<leader>p',"\"_dP",opts)
 

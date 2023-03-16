@@ -94,10 +94,10 @@ return {
                 --end, { 'i', 's' }),
             },
             sources = cmp.config.sources {
-                { name = 'nvim_lsp' },
-                { name = 'nvim_lua' }, -- For luasnip users.
-                { name = 'luasnip' },
-                { name = 'buffer'},
+                { name = 'nvim_lsp' , keyword_length = 2, max_item_count = 20},
+                { name = 'nvim_lua' , keyword_length = 2, max_item_count = 20}, -- For luasnip users.
+                { name = 'luasnip' , keyword_length = 2, max_item_count = 20},
+                { name = 'buffer', keyword_length = 3, max_item_count = 20},
             },
         }
 
