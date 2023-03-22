@@ -1,5 +1,6 @@
 return {
     'hrsh7th/nvim-cmp',
+    event = "InsertEnter",
     dependencies = {
         'hrsh7th/cmp-nvim-lsp' , 'saadparwaiz1/cmp_luasnip', 'hrsh7th/cmp-nvim-lua',
         'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path'
@@ -100,6 +101,5 @@ return {
                 { name = 'buffer', keyword_length = 3, max_item_count = 20},
             },
         }
-
     end,
 }

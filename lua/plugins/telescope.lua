@@ -4,6 +4,7 @@ return {
     dependencies = {
         'nvim-lua/plenary.nvim'
     },
+    lazy = true,
     config = function()
         -- [[ Configure Telescope ]]
         -- See `:help telescope` and `:help telescope.setup()`

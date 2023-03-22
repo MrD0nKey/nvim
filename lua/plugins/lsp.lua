@@ -87,6 +87,8 @@ return {
                     telemetry = { enable = false },
                 },
             },
+            texlab = {},
+            marksman = {},
         }
 
         -- Setup neovim lua configuration

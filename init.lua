@@ -17,6 +17,8 @@ local g = vim.g
 
 g.mapleader = ","
 
+g.tex_flavor = "latex"
+
 g.t_co = 256
 o.termguicolors = true
 o.background = 'dark'

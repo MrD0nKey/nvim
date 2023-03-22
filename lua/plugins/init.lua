@@ -5,5 +5,7 @@ return {
 	config = function()
 		vim.cmd([[colorscheme nightfly]])
 	end,
-	},
+	},{
+        'nathom/filetype.nvim'
+    }
 }
