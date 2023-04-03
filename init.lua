@@ -16,6 +16,7 @@ local o = vim.opt
 local g = vim.g
 
 g.mapleader = ","
+g.maplocalleader = ','
 
 g.tex_flavor = "latex"
 
@@ -54,14 +55,16 @@ vim.wo.signcolumn = 'yes'
 
 vim.wo.number = true
 
+vim.cmd("syntax on")
+
 local map = vim.api.nvim_set_keymap
 local opts = { silent = true, noremap = true }
 
 
 --General Keymaps
 map('i', 'jk', '<Esc><Right>', opts)
-map('n', '<leader>bn', '<cmd>bnext<Cr>', opts)
-map('n', '<leader>bp', '<cmd>bprevious<Cr>', opts)
+map('n', '<leader>n', '<cmd>bnext<Cr>', opts)
+map('n', '<leader>p', '<cmd>bprevious<Cr>', opts)
 map('i', '{<Cr>', '{<Cr>}<Esc>O', opts)
 map('n', '<C-u>', '<C-u>zz', opts)
 map('n', '<C-d>', '<C-d>zz', opts)
@@ -87,7 +90,7 @@ map('n','<S-Up>','<C-w>2+',opts)
 map('n','<S-Down>','<C-w>2-',opts)
 
 --Prime keymap dont remember
-map('x','<leader>p',"\"_dP",opts)
+map('x','<leader>P',"\"_dP",opts)
 
 --Diagnostics
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
