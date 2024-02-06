@@ -8,7 +8,7 @@ return {
     config = function()
         -- nvim-cmp setup
         local cmp = require 'cmp'
-        local luasnip = require 'luasnip'
+        --local luasnip = require 'luasnip'
         local kind_icons = {
             Text = "",
             Method = "",
@@ -40,7 +40,7 @@ return {
         cmp.setup {
             snippet = {
                 expand = function(args)
-                    luasnip.lsp_expand(args.body)
+                    --luasnip.lsp_expand(args.body)
                 end,
             },
             view = {

@@ -66,7 +66,7 @@ map('i', 'jk', '<Esc><Right>', opts)
 map('n', '<leader>n', '<cmd>bnext<Cr>', opts)
 map('n', '<leader>p', '<cmd>bprevious<Cr>', opts)
 map('i', '{<Cr>', '{<Cr>}<Esc>O', opts)
-map('n', '<C-u>', '<C-u>zz', opts)
+map('n', '<C-i>', '<C-u>zz', opts)
 map('n', '<C-d>', '<C-d>zz', opts)
 map('n', '<leader>tt', '<cmd>ToggleTerm size=30 direction=float<Cr>', opts)
 map('n', '<leader>tg', '<cmd>TermExec size=70 direction=float cmd="lazygit"<Cr>', opts)
@@ -78,14 +78,14 @@ map('v','<','<gv',opts)
 map('v','>','>gv',opts)
 
 --Window Navigation
-map('n','<C-h>','<C-w>h',opts)
-map('n','<C-l>','<C-w>l',opts)
-map('n','<C-k>','<C-w>k',opts)
-map('n','<C-j>','<C-w>j',opts)
+--map('n','<C-h>','<C-w>h',opts)
+--map('n','<C-l>','<C-w>l',opts)
+--map('n','<C-k>','<C-w>k',opts)
+--map('n','<C-j>','<C-w>j',opts)
 
 --Rezising Windows
-map('n','<S-Left>','<C-w>2>',opts)
-map('n','<S-Right>','<C-w>2<',opts)
+map('n','<S-Left>','<C-w>2<',opts)
+map('n','<S-Right>','<C-w>2>',opts)
 map('n','<S-Up>','<C-w>2+',opts)
 map('n','<S-Down>','<C-w>2-',opts)
 
@@ -95,7 +95,7 @@ map('x','<leader>P',"\"_dP",opts)
 --Diagnostics
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, opts)
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, opts)
 
 -- Setup of Plugins
 require "lazy".setup("plugins")
